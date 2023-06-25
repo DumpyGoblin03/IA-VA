@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IA-VA</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+
+    </head>
+    <body onload="startTime()">
+        <header>
+            <h1 class="tituloIAVA">IA-VA</h1>
+            <h2 class="subtituloIAVA">Reconocimiento de<br>
+                personas desaparecidas</h2>
+            <h3>Detalles</h3>
+        </header>
+        <!--<img class="img_camera" src="{{ url_for('video_feed')}}" >-->
+        <img class="img_recognized" src="{{ url_for('static', filename=PATH + img_name +'.'+ FI ) }}">
+        <strong class="nombretxt">Nombre</strong>
+        <strong class="nombreObtenido">{{img_name}}</strong>
+        <strong class="ubicaciontxt">Ubicación</strong>
+        <strong class="ubicacionObtenido">{{UO}}</strong>
+        <strong class="horatxt">Hora</strong>
+        <strong class="horaObtenido">{{HO}}</strong>
+        <strong class="fechatxt">Fecha</strong>
+        <strong class="fechaObtenido">{{FO}}</strong>
+        <div id="Clock" class="glow"></div>
+    </body>
+</html>

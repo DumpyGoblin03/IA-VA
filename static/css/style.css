@@ -1,0 +1,240 @@
+header h1 {
+  font-family: 'Times New Roman';
+  font-size: 95px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+}
+
+.tituloIAVA{
+  top:-40px;
+  left: 55px;
+  text-align: left;
+}
+
+header h2 {
+  font-family: 'Times New Roman';
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+}
+
+header h2:before {
+  width: 895px;
+  height: 5px;
+  display: block;
+  content: "";
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  position: absolute;
+  bottom: -15px;
+  left: -32%;
+  margin-left: -175px;
+}
+
+.subtituloIAVA{
+  top: 18px;
+  left: 328px;
+  text-align: left;
+}
+
+h3{
+  font-family: 'Times New Roman';
+  font-size: 35px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #FFFFFF, #FFFFFF);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 37px;
+  left: 1100px;
+  text-align: left;
+}
+
+h3:before {
+  width: 355px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 13%;
+  margin-left: -130px;
+  background-color: #FFFFFF;
+}
+
+body {
+  background-image: linear-gradient(to left, #330066, #000033);
+}
+
+.img_camera{
+    position:absolute;
+    border:5px solid black;
+    width:430px;
+    height:430px;
+    top:150px;
+    left:55px;
+}
+
+.img_recognized{
+    position:absolute;
+    border:5px solid black;
+    width:430px;
+    height:430px;
+    top:150px;
+    left:515px;
+}
+
+strong{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: 550;
+    background-image: linear-gradient(to left, #FFFFFF, #FFFFFF);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position:absolute;
+
+}
+
+.nombretxt{
+    top:150px;
+    left:985px;
+}
+
+.nombreObtenido{
+    background-image: linear-gradient(to left, #976E6E, #99FF99);
+    top:200px;
+    left:985px;
+}
+
+.ubicaciontxt{
+    top:250px;
+    left:985px;
+}
+
+.ubicacionObtenido{
+    background-image: linear-gradient(to left, #976E6E, #99FF99);
+    top:300px;
+    left:985px;
+}
+
+.horatxt{
+    top:350px;
+    left:985px;
+}
+
+.horaObtenido{
+    background-image: linear-gradient(to left, #976E6E, #99FF99);
+    top:400px;
+    left:985px;
+}
+
+.fechatxt{
+    top:450px;
+    left:985px;
+}
+
+.fechaObtenido{
+    background-image: linear-gradient(to left, #976E6E, #99FF99);
+    top:500px;
+    left:985px;
+}
+
+.fechatxt:before {
+  width: 355px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 130px;
+  bottom: -15px;
+  left: 13%;
+  margin-left: -12px;
+  background-color: #FFFFFF;
+}
+
+/* ---------------------------------------BOTON Y EFECTOS-----------------------------------*/
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  position:absolute;
+  top:525px;
+  left:990px;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+/* ---------------------------------RELOJ---------------------------------------------*/
+
+.glow {
+    position:absolute;
+    top:95px;
+    left:837px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+/* -----------------------------------------------------------------------------------*/
+
